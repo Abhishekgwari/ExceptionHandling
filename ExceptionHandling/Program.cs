@@ -1,12 +1,13 @@
 ﻿using System;
 class ExceptionDemo
 {
-    static void Main()
+    static void Main() 
     {
 
         try
-        {
-            Console.WriteLine("Enter 1st no");
+        {  
+            // system exception
+            Console.WriteLine("Enter 1st no"); 
             int x = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter 2nd no");
 
@@ -21,7 +22,7 @@ class ExceptionDemo
         }
         catch (FormatException ex2)
         {
-            Console.WriteLine("Input must be numeric");
+            Console.WriteLine("Input must be numeric");  
         }
         catch (Exception ex)
         {
